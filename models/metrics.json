@@ -1,0 +1,570 @@
+{
+  "best_model": "Gradient Boosting (HistGB)",
+  "comparison": [
+    {
+      "model": "Logistic Regression",
+      "roc_auc": 0.8313945250901255,
+      "pr_auc": 0.5600897276869895,
+      "brier": 0.16751520649223045
+    },
+    {
+      "model": "Random Forest",
+      "roc_auc": 0.8850018935733935,
+      "pr_auc": 0.6987000980604768,
+      "brier": 0.0874951702727372
+    },
+    {
+      "model": "Gradient Boosting (HistGB)",
+      "roc_auc": 0.8942904500720095,
+      "pr_auc": 0.7135682299992341,
+      "brier": 0.08450627414327874
+    }
+  ],
+  "roc_auc": 0.8942904500720095,
+  "pr_auc": 0.7135682299992341,
+  "classification_at_economic_cut": {
+    "recall_defaulters": 0.8062225934433076,
+    "precision_defaulters": 0.49659163987138266,
+    "f1_defaulters": 0.6146131805157593,
+    "approve_rate": 0.7155036774122727,
+    "accuracy": 0.8228255699074244
+  },
+  "econ": {
+    "fee": 0.2,
+    "lgd": 1.0,
+    "pd_cut": 0.16666666666666669,
+    "low_cut": 0.08333333333333334,
+    "best_cut": 0.16
+  },
+  "holdout": {
+    "n": 27329,
+    "default_rate": 0.17523509824728312,
+    "pnl_approve_all": -909.0,
+    "pnl_model": 14781.0,
+    "uplift": 15690.0
+  },
+  "cut_curve": [
+    {
+      "cut": 0.02,
+      "pnl": 5945.0,
+      "approve_rate": 0.21577811116396503,
+      "defaulters_caught": 0.9901858425558572,
+      "precision": 0.22125793206420305
+    },
+    {
+      "cut": 0.03,
+      "pnl": 8201.0,
+      "approve_rate": 0.30860990156976104,
+      "defaulters_caught": 0.9764042597619544,
+      "precision": 0.24747287642233395
+    },
+    {
+      "cut": 0.04,
+      "pnl": 9761.0,
+      "approve_rate": 0.3804749533462622,
+      "defaulters_caught": 0.9590728753393193,
+      "precision": 0.27127753824345874
+    },
+    {
+      "cut": 0.05,
+      "pnl": 10959.0,
+      "approve_rate": 0.43854513520436167,
+      "defaulters_caught": 0.9432031739402799,
+      "precision": 0.2943821689259645
+    },
+    {
+      "cut": 0.06,
+      "pnl": 11887.0,
+      "approve_rate": 0.4839547733177211,
+      "defaulters_caught": 0.9304656504489455,
+      "precision": 0.3159611430192158
+    },
+    {
+      "cut": 0.07,
+      "pnl": 12683.0,
+      "approve_rate": 0.5240952833985876,
+      "defaulters_caught": 0.9187721862601795,
+      "precision": 0.3383053975088421
+    },
+    {
+      "cut": 0.08,
+      "pnl": 13259.0,
+      "approve_rate": 0.5566248307658531,
+      "defaulters_caught": 0.9064522864898726,
+      "precision": 0.35825699430552116
+    },
+    {
+      "cut": 0.09,
+      "pnl": 13731.0,
+      "approve_rate": 0.5855318526107798,
+      "defaulters_caught": 0.8949676341616204,
+      "precision": 0.3783879226626644
+    },
+    {
+      "cut": 0.1,
+      "pnl": 14148.0,
+      "approve_rate": 0.6100845255955213,
+      "defaulters_caught": 0.8847358529964502,
+      "precision": 0.3976163663663664
+    },
+    {
+      "cut": 0.11,
+      "pnl": 14456.0,
+      "approve_rate": 0.6317464963957701,
+      "defaulters_caught": 0.873877636249739,
+      "precision": 0.41583863275039745
+    },
+    {
+      "cut": 0.12,
+      "pnl": 14605.0,
+      "approve_rate": 0.6500786710088184,
+      "defaulters_caught": 0.861557736479432,
+      "precision": 0.4314545644672174
+    },
+    {
+      "cut": 0.13,
+      "pnl": 14680.0,
+      "approve_rate": 0.6676424311171283,
+      "defaulters_caught": 0.8477761536855294,
+      "precision": 0.4469888803258835
+    },
+    {
+      "cut": 0.14,
+      "pnl": 14752.0,
+      "approve_rate": 0.6833034505470379,
+      "defaulters_caught": 0.8356650657757361,
+      "precision": 0.46239168110918544
+    },
+    {
+      "cut": 0.15,
+      "pnl": 14755.0,
+      "approve_rate": 0.6966958176296242,
+      "defaulters_caught": 0.8231363541449155,
+      "precision": 0.4755700325732899
+    },
+    {
+      "cut": 0.16,
+      "pnl": 14803.0,
+      "approve_rate": 0.7087709027040873,
+      "defaulters_caught": 0.813113384840259,
+      "precision": 0.48925744440256314
+    },
+    {
+      "cut": 0.17,
+      "pnl": 14766.0,
+      "approve_rate": 0.7196018881042117,
+      "defaulters_caught": 0.8018375443725203,
+      "precision": 0.5011092261516378
+    },
+    {
+      "cut": 0.18,
+      "pnl": 14740.0,
+      "approve_rate": 0.7294083208313513,
+      "defaulters_caught": 0.7913969513468365,
+      "precision": 0.5125084516565247
+    },
+    {
+      "cut": 0.19,
+      "pnl": 14578.0,
+      "approve_rate": 0.7386292948882139,
+      "defaulters_caught": 0.7771977448319064,
+      "precision": 0.5210695786084278
+    },
+    {
+      "cut": 0.2,
+      "pnl": 14577.0,
+      "approve_rate": 0.7473745837754766,
+      "defaulters_caught": 0.7688452704113594,
+      "precision": 0.5333140208574739
+    },
+    {
+      "cut": 0.21,
+      "pnl": 14471.0,
+      "approve_rate": 0.7557539609938161,
+      "defaulters_caught": 0.7573606180831072,
+      "precision": 0.5433707865168539
+    },
+    {
+      "cut": 0.22,
+      "pnl": 14412.0,
+      "approve_rate": 0.7624501445351092,
+      "defaulters_caught": 0.7492169555230737,
+      "precision": 0.5526802218114603
+    },
+    {
+      "cut": 0.23,
+      "pnl": 14325.0,
+      "approve_rate": 0.7695122397453255,
+      "defaulters_caught": 0.7394027980789308,
+      "precision": 0.5621527226543895
+    },
+    {
+      "cut": 0.24,
+      "pnl": 14201.0,
+      "approve_rate": 0.7759156939514801,
+      "defaulters_caught": 0.728962205053247,
+      "precision": 0.5700522534291312
+    },
+    {
+      "cut": 0.25,
+      "pnl": 14093.0,
+      "approve_rate": 0.7823923304914193,
+      "defaulters_caught": 0.7191480476091042,
+      "precision": 0.5791155204304691
+    },
+    {
+      "cut": 0.26,
+      "pnl": 14033.0,
+      "approve_rate": 0.7884664641955432,
+      "defaulters_caught": 0.7110043850490708,
+      "precision": 0.5889984431759211
+    },
+    {
+      "cut": 0.27,
+      "pnl": 13854.0,
+      "approve_rate": 0.7942844597314208,
+      "defaulters_caught": 0.6995197327208186,
+      "precision": 0.5958733546780505
+    },
+    {
+      "cut": 0.28,
+      "pnl": 13789.0,
+      "approve_rate": 0.8004683669362216,
+      "defaulters_caught": 0.6913760701607852,
+      "precision": 0.6071887034659821
+    },
+    {
+      "cut": 0.29,
+      "pnl": 13680.0,
+      "approve_rate": 0.8052252186322222,
+      "defaulters_caught": 0.6832324076007518,
+      "precision": 0.6146909637422506
+    },
+    {
+      "cut": 0.3,
+      "pnl": 13559.0,
+      "approve_rate": 0.8098357056606535,
+      "defaulters_caught": 0.6750887450407184,
+      "precision": 0.6220896671156436
+    },
+    {
+      "cut": 0.31,
+      "pnl": 13407.0,
+      "approve_rate": 0.8138973251857001,
+      "defaulters_caught": 0.6671538943411985,
+      "precision": 0.6281950452221785
+    },
+    {
+      "cut": 0.32,
+      "pnl": 13261.0,
+      "approve_rate": 0.8183614475465623,
+      "defaulters_caught": 0.6577573606180831,
+      "precision": 0.6345688960515713
+    },
+    {
+      "cut": 0.33,
+      "pnl": 13105.0,
+      "approve_rate": 0.8231182992425629,
+      "defaulters_caught": 0.648152015034454,
+      "precision": 0.6421183285064129
+    },
+    {
+      "cut": 0.34,
+      "pnl": 12984.0,
+      "approve_rate": 0.8272165099345018,
+      "defaulters_caught": 0.6402171643349343,
+      "precision": 0.6493011435832274
+    },
+    {
+      "cut": 0.35,
+      "pnl": 12867.0,
+      "approve_rate": 0.8315342676277947,
+      "defaulters_caught": 0.6320735017749008,
+      "precision": 0.6574717636837533
+    },
+    {
+      "cut": 0.36,
+      "pnl": 12726.0,
+      "approve_rate": 0.8357788429873029,
+      "defaulters_caught": 0.6230945917728127,
+      "precision": 0.6648841354723708
+    },
+    {
+      "cut": 0.37,
+      "pnl": 12554.0,
+      "approve_rate": 0.8399502360130264,
+      "defaulters_caught": 0.6136980580496972,
+      "precision": 0.6719250114311842
+    },
+    {
+      "cut": 0.38,
+      "pnl": 12420.0,
+      "approve_rate": 0.8440484467049654,
+      "defaulters_caught": 0.6057632073501775,
+      "precision": 0.6806663538244956
+    },
+    {
+      "cut": 0.39,
+      "pnl": 12245.0,
+      "approve_rate": 0.8475977898935197,
+      "defaulters_caught": 0.596366673627062,
+      "precision": 0.6857142857142857
+    },
+    {
+      "cut": 0.4,
+      "pnl": 12172.0,
+      "approve_rate": 0.8501957627428739,
+      "defaulters_caught": 0.5917728126957611,
+      "precision": 0.6922325354176844
+    },
+    {
+      "cut": 0.41,
+      "pnl": 12031.0,
+      "approve_rate": 0.8532328295949357,
+      "defaulters_caught": 0.5842555857172688,
+      "precision": 0.6975816504612317
+    },
+    {
+      "cut": 0.42,
+      "pnl": 11937.0,
+      "approve_rate": 0.8565260346152439,
+      "defaulters_caught": 0.5779912299018585,
+      "precision": 0.7059423616424382
+    },
+    {
+      "cut": 0.43,
+      "pnl": 11824.0,
+      "approve_rate": 0.8595996926341981,
+      "defaulters_caught": 0.5708916266443934,
+      "precision": 0.7125358352879854
+    },
+    {
+      "cut": 0.44,
+      "pnl": 11723.0,
+      "approve_rate": 0.8627831241538293,
+      "defaulters_caught": 0.5642096471079557,
+      "precision": 0.7205333333333334
+    },
+    {
+      "cut": 0.45,
+      "pnl": 11555.0,
+      "approve_rate": 0.8658201910058911,
+      "defaulters_caught": 0.5554395489663813,
+      "precision": 0.7253886010362695
+    },
+    {
+      "cut": 0.46,
+      "pnl": 11362.0,
+      "approve_rate": 0.8691499871930916,
+      "defaulters_caught": 0.5462518271037795,
+      "precision": 0.7315436241610739
+    },
+    {
+      "cut": 0.47,
+      "pnl": 11246.0,
+      "approve_rate": 0.8713820483735226,
+      "defaulters_caught": 0.5399874712883692,
+      "precision": 0.7357041251778094
+    },
+    {
+      "cut": 0.48,
+      "pnl": 11117.0,
+      "approve_rate": 0.8743093417249076,
+      "defaulters_caught": 0.5326790561703905,
+      "precision": 0.7426491994177584
+    },
+    {
+      "cut": 0.49,
+      "pnl": 10990.0,
+      "approve_rate": 0.8772000439094003,
+      "defaulters_caught": 0.5259970766339528,
+      "precision": 0.7505959475566151
+    },
+    {
+      "cut": 0.5,
+      "pnl": 10827.0,
+      "approve_rate": 0.8796150609242929,
+      "defaulters_caught": 0.5182710377949468,
+      "precision": 0.7544072948328268
+    },
+    {
+      "cut": 0.51,
+      "pnl": 10683.0,
+      "approve_rate": 0.8820666691060778,
+      "defaulters_caught": 0.5111714345374817,
+      "precision": 0.7595408004964319
+    },
+    {
+      "cut": 0.52,
+      "pnl": 10565.0,
+      "approve_rate": 0.8848475977898935,
+      "defaulters_caught": 0.504489455001044,
+      "precision": 0.7677152843978392
+    },
+    {
+      "cut": 0.53,
+      "pnl": 10362.0,
+      "approve_rate": 0.8880310293095247,
+      "defaulters_caught": 0.49446648569638757,
+      "precision": 0.7738562091503268
+    },
+    {
+      "cut": 0.54,
+      "pnl": 10237.0,
+      "approve_rate": 0.8908485491602327,
+      "defaulters_caught": 0.4873668824389225,
+      "precision": 0.7824337914850822
+    },
+    {
+      "cut": 0.55,
+      "pnl": 10080.0,
+      "approve_rate": 0.8933001573420176,
+      "defaulters_caught": 0.4800584673209438,
+      "precision": 0.7884087791495199
+    },
+    {
+      "cut": 0.56,
+      "pnl": 9937.0,
+      "approve_rate": 0.8956785831900179,
+      "defaulters_caught": 0.4731676759239925,
+      "precision": 0.7948088390038583
+    },
+    {
+      "cut": 0.57,
+      "pnl": 9719.0,
+      "approve_rate": 0.8986058765414029,
+      "defaulters_caught": 0.4629358947588223,
+      "precision": 0.8000721761097077
+    },
+    {
+      "cut": 0.58,
+      "pnl": 9514.0,
+      "approve_rate": 0.9013868052252186,
+      "defaulters_caught": 0.4531217373146795,
+      "precision": 0.8051948051948052
+    },
+    {
+      "cut": 0.59,
+      "pnl": 9295.0,
+      "approve_rate": 0.9040945515752498,
+      "defaulters_caught": 0.44309876801002296,
+      "precision": 0.8096146508966043
+    }
+  ],
+  "calibration": [
+    {
+      "predicted": 0.006188442367419012,
+      "actual": 0.00402488108305891
+    },
+    {
+      "predicted": 0.014397377952452703,
+      "actual": 0.010611050128064398
+    },
+    {
+      "predicted": 0.02345189059842776,
+      "actual": 0.025246981339187707
+    },
+    {
+      "predicted": 0.03570836127764333,
+      "actual": 0.04207830223197951
+    },
+    {
+      "predicted": 0.052775466953617865,
+      "actual": 0.04463959019392609
+    },
+    {
+      "predicted": 0.07853101379112871,
+      "actual": 0.06808199121522694
+    },
+    {
+      "predicted": 0.12111179667267828,
+      "actual": 0.12038053421148921
+    },
+    {
+      "predicted": 0.20785577423581947,
+      "actual": 0.22539334065129893
+    },
+    {
+      "predicted": 0.4098779468082306,
+      "actual": 0.4094401756311745
+    },
+    {
+      "predicted": 0.7978023818949955,
+      "actual": 0.8024149286498353
+    }
+  ],
+  "importance": [
+    {
+      "feature": "spend_trend",
+      "importance": 0.04031721944547587
+    },
+    {
+      "feature": "daily_decr90",
+      "importance": 0.02795929711075999
+    },
+    {
+      "feature": "last_rech_date_ma",
+      "importance": 0.019592836646930494
+    },
+    {
+      "feature": "balance_to_spend",
+      "importance": 0.0102750052717732
+    },
+    {
+      "feature": "payback90",
+      "importance": 0.0066906724191983695
+    },
+    {
+      "feature": "sumamnt_ma_rech30",
+      "importance": 0.006532819911511519
+    },
+    {
+      "feature": "aon",
+      "importance": 0.006479385159471181
+    },
+    {
+      "feature": "cnt_ma_rech90",
+      "importance": 0.006453526152399691
+    },
+    {
+      "feature": "daily_decr30",
+      "importance": 0.005192885422846534
+    },
+    {
+      "feature": "rental90",
+      "importance": 0.003505943721816044
+    },
+    {
+      "feature": "last_rech_amt_ma",
+      "importance": 0.0032386363233346907
+    },
+    {
+      "feature": "sumamnt_ma_rech90",
+      "importance": 0.002773246155121386
+    },
+    {
+      "feature": "medianmarechprebal90",
+      "importance": 0.0026557575477590043
+    },
+    {
+      "feature": "payback30",
+      "importance": 0.0025994547126444445
+    },
+    {
+      "feature": "cnt_loans30",
+      "importance": 0.0025432598161403788
+    }
+  ],
+  "out_of_time": {
+    "split_date": "2016-07-08",
+    "n_train": 94631,
+    "n_test": 42134,
+    "default_rate_train": 0.16277963880757892,
+    "default_rate_test": 0.19777376940238287,
+    "roc_auc": 0.8514666742700595,
+    "pr_auc": 0.5932664741716287,
+    "recall_defaulters": 0.7121084843393736,
+    "precision_defaulters": 0.49594651065608025
+  },
+  "trained_at": "2026-11-19 02:07"
+}

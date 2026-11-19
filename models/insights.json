@@ -1,0 +1,146 @@
+{
+  "n_rows": 136765,
+  "n_customers": 126831,
+  "default_rate": 0.17356048696669468,
+  "date_from": "2016-06-01",
+  "date_to": "2016-07-23",
+  "by_recharges30": [
+    {
+      "segment": "0",
+      "default_rate": 0.47741414525245807,
+      "customers": 21053
+    },
+    {
+      "segment": "1",
+      "default_rate": 0.268242312987609,
+      "customers": 26148
+    },
+    {
+      "segment": "2",
+      "default_rate": 0.14398183925811436,
+      "customers": 20704
+    },
+    {
+      "segment": "3-4",
+      "default_rate": 0.0793371310201968,
+      "customers": 28965
+    },
+    {
+      "segment": "5-8",
+      "default_rate": 0.041422147702156846,
+      "customers": 26242
+    },
+    {
+      "segment": "9+",
+      "default_rate": 0.02241265655899802,
+      "customers": 13653
+    }
+  ],
+  "by_loans30": [
+    {
+      "segment": "0-1",
+      "default_rate": 0.30862306631949765,
+      "customers": 58761
+    },
+    {
+      "segment": "2",
+      "default_rate": 0.11950236551603294,
+      "customers": 28535
+    },
+    {
+      "segment": "3-4",
+      "default_rate": 0.06011399075169373,
+      "customers": 27897
+    },
+    {
+      "segment": "5-8",
+      "default_rate": 0.02601655057450735,
+      "customers": 16797
+    },
+    {
+      "segment": "9+",
+      "default_rate": 0.016335078534031412,
+      "customers": 4775
+    }
+  ],
+  "by_tenure": [
+    {
+      "segment": "<6m",
+      "default_rate": 0.23898793369796667,
+      "customers": 23951
+    },
+    {
+      "segment": "6-12m",
+      "default_rate": 0.18072776776187496,
+      "customers": 27179
+    },
+    {
+      "segment": "1-2y",
+      "default_rate": 0.16156565221139754,
+      "customers": 34797
+    },
+    {
+      "segment": "2y+",
+      "default_rate": 0.14023216966570107,
+      "customers": 47293
+    }
+  ],
+  "by_last_recharge_days": [
+    {
+      "segment": "0-3d",
+      "default_rate": 0.17122414186567866,
+      "customers": 74493
+    },
+    {
+      "segment": "4-7d",
+      "default_rate": 0.11328894625993614,
+      "customers": 29438
+    },
+    {
+      "segment": "8-30d",
+      "default_rate": 0.21906902331250952,
+      "customers": 26252
+    },
+    {
+      "segment": ">30d",
+      "default_rate": 0.3766370933671314,
+      "customers": 4734
+    }
+  ],
+  "by_payback": [
+    {
+      "segment": "0d",
+      "default_rate": 0.2735870632710444,
+      "customers": 74331
+    },
+    {
+      "segment": "1-2d",
+      "default_rate": 0.017076558542364572,
+      "customers": 12239
+    },
+    {
+      "segment": "3-5d",
+      "default_rate": 0.029854437535330694,
+      "customers": 28304
+    },
+    {
+      "segment": ">5d",
+      "default_rate": 0.10721300991274953,
+      "customers": 21891
+    }
+  ],
+  "pct_no_recharge_30d": 0.15393558293423024,
+  "pct_loan_10": 0.06222352209995247,
+  "label_censor": {
+    "applied": true,
+    "from_date": "2016-07-24",
+    "rows_dropped": 53236,
+    "rows_total": 190001,
+    "default_rate_all_rows": 0.1249309214162031,
+    "default_rate_matured": 0.17356048696669468
+  },
+  "data_quality": {
+    "corrupted_or_missing_cells": 17191,
+    "total_cells": 4376480
+  }
+}

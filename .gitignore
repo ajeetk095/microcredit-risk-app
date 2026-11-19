@@ -1,0 +1,6 @@
+__pycache__/
+*.pyc
+.venv/
+.DS_Store
+Micro_delinquency_train_test_dataset_v2.csv
+submission.csv
