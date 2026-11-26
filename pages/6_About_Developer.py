@@ -21,7 +21,7 @@ EMAIL = "ajeetk095@gmail.com"
 LINKEDIN = "https://www.linkedin.com/in/ajeek095/"
 GITHUB = "https://github.com/ajeetk095"
 REPO = "https://github.com/ajeetk095/microcredit-risk-app"  # update if your repo name differs
-PHOTO_PATH = Path(__file__).resolve().parent.parent / "assets" / "developer.jpg"  # optional local photo
+PHOTO_PATH = Path(__file__).resolve().parent.parent / "assets" / "ajeet_img.png"  # developer photo
 
 metrics, ins = mu.load_json("metrics.json"), mu.load_json("insights.json")
 e, h, c, oot = metrics["econ"], metrics["holdout"], metrics["classification_at_economic_cut"], metrics["out_of_time"]
@@ -29,10 +29,13 @@ lc = ins.get("label_censor", {})
 
 
 def avatar_html() -> str:
-    """Local photo if present (embedded as base64, never expires), else an initials badge."""
+    """Developer photo from assets/ (embedded as base64), with an initials badge as fallback."""
     if PHOTO_PATH.exists():
         b64 = base64.b64encode(PHOTO_PATH.read_bytes()).decode()
-        return f'<img class="avatar" src="data:image/jpeg;base64,{b64}" alt="{NAME}">'
+        return (f'<img class="avatar" src="data:image/png;base64,{b64}" alt="{NAME}" '
+                'style="width:150px;height:150px;min-width:150px;aspect-ratio:1/1;border-radius:50%;'
+                'object-fit:cover;object-position:center;display:block;margin:0 auto .8rem auto;'
+                'border:3px solid #1f6feb;box-shadow:0 2px 8px rgba(0,0,0,.25)">')
     initials = "".join(w[0] for w in NAME.split()[:2]).upper()
     return f'<div class="avatar-fallback">{initials}</div>'
 
