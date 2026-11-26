@@ -1,5 +1,5 @@
 import numpy as np, pandas as pd, plotly.graph_objects as go, streamlit as st
-from src import model_utils as mu, ui
+from src import model_utils as mu, project_info, ui
 
 st.set_page_config(page_title="Business Simulator", page_icon="💰", layout="wide")
 ui.inject()
@@ -40,4 +40,5 @@ if rec > 0:
     st.info("With recovery, losses shrink and the best cut-off rises - more customers are worth lending to.")
 st.caption("Assumes the hold-out mix of 5 INR and 10 INR loans is representative. Simulation, not a forecast.")
 
-
+st.divider()
+project_info.render(m, mu.load_json("insights.json"))
